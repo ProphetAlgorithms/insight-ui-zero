@@ -80,6 +80,15 @@
               </div>
             </td>
           </tr>
+          <tr>
+            <td><strong>Final Sapling Root</strong></td>
+            <td class="text-right text-muted">
+              <div class="ellipsis">
+                <span class="btn-copy" clip-copy="block.finalsaplingroot"></span>
+                <span>{{block.finalsaplingroot}}</span>
+              </div>
+            </td>
+          </tr>
           <tr data-ng-show="block.previousblockhash">
             <td><strong translate>Previous Block</strong></td>
             <td class="text-right"><a href="block/{{block.previousblockhash}}">{{block.height-1}}</a></td>
@@ -138,5 +147,5 @@
     <div data-ng-include src="'views/transaction/list.html'" when-scrolled="loadMore()"></div>
   </div>
 
-</section>
+</section
 
