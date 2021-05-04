@@ -59,6 +59,6 @@ angular.module('insight.currency').controller('CurrencyController',
     // Get initial value
     Currency.get({}, function(res) {
       $rootScope.currency.factor = $rootScope.currency.binance = res.data.usd;
-    });
+    }, this.symbol);
 
   });
