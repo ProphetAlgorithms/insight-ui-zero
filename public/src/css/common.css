@@ -203,7 +203,8 @@ margin-left: 0;
 #search { color: #fff; }
 
 #search::-webkit-input-placeholder {
-  color: #BCDF7E;
+  /*color: #BCDF7E;*/
+  color: #000000;
   font-family: 'Ubuntu', sans-serif;
   font-style: italic;
   font-weight: 100;
