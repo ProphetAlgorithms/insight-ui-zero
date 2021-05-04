@@ -25,7 +25,7 @@ msgid ""
 "<strong>insight zero</strong>  is an <a href=\"https://insight.is/\" target="
 "\"_blank\">open-source Zero blockchain explorer</a> with complete REST "
 "and websocket APIs that can be used for writing web wallets and other apps  "
-"that need more advanced blockchain queries than provided by zcashd RPC.  "
+"that need more advanced blockchain queries than provided by zerod RPC.  "
 "Check out the <a href=\"https://github.com/ProphetAlgorithms/insight-ui-zero\" target=\"_blank"
 "\">source code</a>."
 msgstr ""
@@ -90,11 +90,11 @@ msgstr "Bytes Serializados"
 
 #: public/views/includes/connection.html
 msgid ""
-"Can't connect to zcashd to get live updates from the p2p network. (Tried "
-"connecting to zcashd at {{host}}:{{port}} and failed.)"
+"Can't connect to zerod to get live updates from the p2p network. (Tried "
+"connecting to zerod at {{host}}:{{port}} and failed.)"
 msgstr ""
-"No se pudo conectar a zcashd para obtener actualizaciones en vivo de la "
-"red p2p. (Se intentó conectar a zcashd de {{host}}:{{port}} y falló.)"
+"No se pudo conectar a zerod para obtener actualizaciones en vivo de la "
+"red p2p. (Se intentó conectar a zerod de {{host}}:{{port}} y falló.)"
 
 #: public/views/includes/connection.html
 msgid "Can't connect to insight server. Attempting to reconnect..."
@@ -195,8 +195,8 @@ msgid "Last Block"
 msgstr "Último Bloque"
 
 #: public/views/status.html
-msgid "Last Block Hash (Zcashd)"
-msgstr "Último Bloque Hash (Zcashd)"
+msgid "Last Block Hash (Zerod)"
+msgstr "Último Bloque Hash (Zerod)"
 
 #: public/views/index.html
 msgid "Latest Blocks"
