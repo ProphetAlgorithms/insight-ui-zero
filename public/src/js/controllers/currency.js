@@ -18,7 +18,7 @@ angular.module('insight.currency').controller('CurrencyController',
 
         var response;
 
-        if (this.symbol === 'USD') {
+        if (this.symbol === 'USD' || this.symbol === 'BTC') {
           response = _roundFloat((value * this.factor), 2);
         } else if (this.symbol === 'm'+netSymbol) {
           this.factor = 1000;
