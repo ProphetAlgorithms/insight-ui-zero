@@ -6,7 +6,7 @@ angular.module('insight.system').controller('HeaderController',
 
     $rootScope.currency = {
       factor: 1,
-      binance: 0,
+      exchange: 0,
       testnet: testnet,
       netSymbol: netSymbol,
       symbol: netSymbol
