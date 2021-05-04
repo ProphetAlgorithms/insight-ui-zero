@@ -819,6 +819,10 @@ a.v_highlight_more {
   .navbar-default .navbar-nav .open .dropdown-menu>li>a {
     color: #fff;
   }
+  .navbar-default .navbar-nav>li>a:focus {
+    background-color:transparent;
+    text-decoration:underline;
+  }
   .txvalues {
     display: inline;
     margin: 0;
