@@ -18,8 +18,10 @@ angular.module('insight.currency').controller('CurrencyController',
 
         var response;
 
-        if (this.symbol === 'USD' || this.symbol === 'BTC') {
+        if (this.symbol === 'USD') {
           response = _roundFloat((value * this.factor), 2);
+        } else if (this.symbol === 'BTC') {
+          response = (value * this.factor).toFixed(8);
         } else if (this.symbol === 'm'+netSymbol) {
           this.factor = 1000;
           response = _roundFloat((value * this.factor), 5);
@@ -62,7 +64,10 @@ angular.module('insight.currency').controller('CurrencyController',
 
     // Get initial value
     Currency.get({}, function(res) {
-      $rootScope.currency.factor = $rootScope.currency.exchange = res.data.usd;
-    }, this.symbol);
-
+      if ($scope.currency.symbol === 'BTC') {
+        $rootScope.currency.factor = $rootScope.currency.exchange = res.data.btc;
+      } else if ($scope.currency.symbol === 'USD') {
+        $rootScope.currency.factor = $rootScope.currency.exchange = res.data.usd;
+      } 
+    });
   });
