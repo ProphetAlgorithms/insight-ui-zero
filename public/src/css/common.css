@@ -204,14 +204,15 @@ margin-left: 0;
 
 #search::-webkit-input-placeholder {
   /*color: #BCDF7E;*/
-  color: #000000;
+  color: #555555;
   font-family: 'Ubuntu', sans-serif;
   font-style: italic;
   font-weight: 100;
 }
 
 #search::-moz-placeholder {
-  color: #BCDF7E;
+  /*color: #BCDF7E;*/
+  color: #555555;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 100;
 }
