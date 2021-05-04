@@ -167,7 +167,8 @@ margin-left: 0;
 }
 
 .navbar-form .form-control {
-  background-color: #7CAD23;
+  /*background-color: #7CAD23;*/
+  background-color: #FFFFFF;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -317,8 +318,10 @@ margin-left: 0;
   border-radius: 2px;
 }
 .btn-primary {
-  background-color: #8DC429;
-  border: 2px solid #76AF0F;
+  /*background-color: #8DC429;
+  border: 2px solid #76AF0F;*/
+  background-color: #373D42;
+  border: 2px solid;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active,
