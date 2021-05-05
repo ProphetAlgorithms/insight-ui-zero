@@ -21,7 +21,7 @@ angular.module('insight.currency').controller('CurrencyController',
         if (this.symbol === 'USD') {
           response = _roundFloat((value * this.factor), 2);
         } else if (this.symbol === 'BTC') {
-          response = (value * this.factor).toFixed(8);
+          response = _roundFloat((value * this.factor), 8).toFixed(8);
         } else if (this.symbol === 'm'+netSymbol) {
           this.factor = 1000;
           response = _roundFloat((value * this.factor), 5);
@@ -33,7 +33,8 @@ angular.module('insight.currency').controller('CurrencyController',
           response = value;
         }
         // prevent sci notation
-        if (response < 1e-7) response=response.toFixed(8);
+        //if (response < 1e-7) response=response.toFixed(8);
+        if (response == 0.00000000) response=0;
 
         return response + ' ' + this.symbol;
       }
